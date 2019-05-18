@@ -1,4 +1,7 @@
-﻿Shader "SMO/EdgeBlur"
+﻿/*	This shader builds on the Gaussian two-pass blur shader to implement an edge
+	blur - i.e. the blurring is stronger on the image edges than in the middle.
+*/
+Shader "Snapshot/EdgeBlur"
 {
     Properties
     {
@@ -20,6 +23,9 @@
 	int	_KernelSize;
 	float _Spread;
 
+	/*	Since the value of sigma is now not uniform across all pixels, it must
+		be passed into this function.
+	*/
 	// One-dimensional Gaussian curve function.
 	float gaussian(int x, float sigma)
 	{
@@ -30,7 +36,8 @@
 	// Helper function to calculate distance from the centre.
 	float getSigma(float2 uv)
 	{
-		return 1.0;
+		float distance = sqrt(pow(abs(uv.x - 0.5) * 2, 2) + pow(abs(uv.y - 0.5) * 2, 2));
+		return min(distance * 1.25, 1.0);
 	}
 
 	ENDCG
@@ -56,6 +63,10 @@
 				int lower = -((_KernelSize - 1) / 2);
 				int upper = -lower;
 
+				/*	The loop now bases its value for sigma on the distance from
+					the centre of the image. The further from the centre, the
+					larger the value of sigma (and the more blurring occurs).
+				*/
 				for (int x = lower; x <= upper; ++x)
 				{
 					float sigma = getSigma(i.uv) * _Spread;
@@ -83,7 +94,11 @@
 
 				int lower = -((_KernelSize - 1) / 2);
 				int upper = -lower;
-
+				
+				/*	The loop now bases its value for sigma on the distance from
+					the centre of the image. The further from the centre, the
+					larger the value of sigma (and the more blurring occurs).
+				*/
 				for (int y = lower; y <= upper; ++y)
 				{
 					float sigma = getSigma(i.uv) * _Spread;

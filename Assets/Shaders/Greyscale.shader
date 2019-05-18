@@ -1,4 +1,8 @@
-﻿Shader "SMO/Greyscale"
+﻿/*	This shader calculates a luminance value based on the colour of the pixel,
+	then outputs a greyscale value based on that luminance (i.e. the red, green
+	and blue colour channels all use that luminance value).
+*/
+Shader "Snapshot/Greyscale"
 {
     Properties
     {
@@ -6,7 +10,7 @@
     }
     SubShader
     {
-        Tags { "RenderType" = "Opaque" }
+        Tags { "RenderType"="Opaque" }
 
         Pass
         {
@@ -22,7 +26,12 @@
             fixed4 frag (v2f_img i) : SV_Target
             {
                 fixed4 tex = tex2D(_MainTex, i.uv);
-                return tex;
+
+				// Constants represent human eye sensitivity to each colour.
+				float lum = tex.r * 0.3 + tex.g * 0.59 + tex.b * 0.11;
+				float4 greyscale = float4(lum, lum, lum, tex.a);
+
+                return greyscale;
             }
             ENDCG
         }
