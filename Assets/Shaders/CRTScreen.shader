@@ -18,7 +18,7 @@
 	The shader requires the ImageEffectCRT.cs script to operate correctly and
 	set the values of _Brightness and _Contrast.
 */
-Shader "SMO/Complete/CRTScreen"
+Shader "Snapshot/CRTScreen"
 {
 	/*	The _Brightness and _Contrast values can be tweaked to match those of a
 		CRT screen. Brightness is important to counteract the darkening effect

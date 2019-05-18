@@ -24,7 +24,7 @@
 	The idea is that the most "stable" region - one representative of the
 	pixel's colour - is picked.
 */
-Shader "SMO/Complete/Painting"
+Shader "Snapshot/Painting"
 {
     Properties
     {

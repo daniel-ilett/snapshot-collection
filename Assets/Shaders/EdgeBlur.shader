@@ -1,7 +1,7 @@
 ﻿/*	This shader builds on the Gaussian two-pass blur shader to implement an edge
 	blur - i.e. the blurring is stronger on the image edges than in the middle.
 */
-Shader "SMO/Complete/EdgeBlur"
+Shader "Snapshot/EdgeBlur"
 {
     Properties
     {

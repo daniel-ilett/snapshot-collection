@@ -2,7 +2,7 @@
 	map one value to R, G and B; all three colour channel inputs influence the 
 	output of each of the three colour channels.
 */
-Shader "SMO/Complete/Sepia"
+Shader "Snapshot/Sepia"
 {
     Properties
     {

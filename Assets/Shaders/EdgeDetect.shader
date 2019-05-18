@@ -1,7 +1,7 @@
 ﻿/*	This shader uses a Sobel edge detector to determine whether a pixel lies on
 	an edge of the image using image gradients in the x- and y-directions.
 */
-Shader "SMO/Complete/EdgeDetect"
+Shader "Snapshot/EdgeDetect"
 {
     Properties
     {

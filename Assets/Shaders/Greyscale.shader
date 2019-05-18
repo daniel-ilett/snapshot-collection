@@ -2,7 +2,7 @@
 	then outputs a greyscale value based on that luminance (i.e. the red, green
 	and blue colour channels all use that luminance value).
 */
-Shader "SMO/Complete/Greyscale"
+Shader "Snapshot/Greyscale"
 {
     Properties
     {

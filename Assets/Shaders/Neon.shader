@@ -3,7 +3,7 @@
 	to have maximum brightness and saturation (but they keep the same hue),
 	resulting in only bright colours.
 */
-Shader "SMO/Complete/Neon"
+Shader "Snapshot/Neon"
 {
     Properties
     {

@@ -2,7 +2,7 @@
 	pixels further back have a different colour - based on _FarColour - than
 	those immediately in front of the camera - based on _NearColour.
 */
-Shader "SMO/Complete/Silhouette"
+Shader "Snapshot/Silhouette"
 {
 	/*	Define the _NearColour and _FarColour in the Properties so they could
 		be modified easily (in scripting or in the Inspector in Unity if this

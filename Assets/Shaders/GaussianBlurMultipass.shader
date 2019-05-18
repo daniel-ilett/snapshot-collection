@@ -3,7 +3,7 @@
 	Gaussian blur. Apart from this, the general structure of the blur is the
 	same as BoxBlurMultipass.shader.
 */
-Shader "SMO/Complete/GaussianBlurMultipass"
+Shader "Snapshot/GaussianBlurMultipass"
 {
     Properties
     {

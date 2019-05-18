@@ -3,7 +3,7 @@
 
 	This shader works best with the ImageEffectPixelate.cs script.
 */
-Shader "SMO/Complete/PixelNES"
+Shader "Snapshot/PixelNES"
 {
     Properties
     {

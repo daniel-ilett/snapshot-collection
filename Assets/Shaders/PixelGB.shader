@@ -4,7 +4,7 @@
 
 	This shader works best with the ImageEffectPixelate.cs script.
 */
-Shader "SMO/Complete/PixelGB"
+Shader "Snapshot/PixelGB"
 {
 	/*	The Game Boy could use different palettes, so we allow passing in
 		four colours to represent the four possible shades.
