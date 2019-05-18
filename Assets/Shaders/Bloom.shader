@@ -69,16 +69,12 @@ Shader "Snapshot/Bloom"
 			ENDCG
 		}
 
-		/*	UsePass takes passes from other shader files and copies them into
-			this shader file. 
+		/*	UsePass takes passes from the GaussianBlur shader file and copies 
+			them into this shader file. 
 			
-			Pass #1 of this shader file is a single-pass
-			Gaussian blur, and passes #2 and #3 are the horizontal and vertical
+			Passes #1 and #2 are the horizontal and vertical
 			passes of a two-pass Gaussian blur respectively.
 		*/
-
-		// If using single-pass blur.
-		UsePass "SMO/Complete/GaussianBlurSinglepass/BLURPASS"
 
 		// If using multipass blur.
 		UsePass "SMO/Complete/GaussianBlurMultipass/HORIZONTALPASS"

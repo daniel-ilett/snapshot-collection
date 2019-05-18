@@ -78,9 +78,9 @@ public class BloomFilter : BlurFilter
 {
     // IDs of each pass inside the shader.
     private const int thresholdPass = 0;
-    private const int horizontalPass = 2;
-    private const int verticalPass = 3;
-    private const int bloomPass = 4;
+    private const int horizontalPass = 1;
+    private const int verticalPass = 2;
+    private const int bloomPass = 3;
 
     public BloomFilter(string name, Color color, Shader shader) 
         : base(name, color, shader)
