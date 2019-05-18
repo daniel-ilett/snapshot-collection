@@ -77,8 +77,8 @@ Shader "Snapshot/Bloom"
 		*/
 
 		// If using multipass blur.
-		UsePass "SMO/Complete/GaussianBlurMultipass/HORIZONTALPASS"
-		UsePass "SMO/Complete/GaussianBlurMultipass/VERTICALPASS"
+		UsePass "Snapshot/GaussianBlur/HORIZONTALPASS"
+		UsePass "Snapshot/GaussianBlur/VERTICALPASS"
 
 		Pass
 		{

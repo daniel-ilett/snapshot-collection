@@ -42,20 +42,20 @@ public class SnapshotMode : MonoBehaviour
         }
 
         // Find all shader files.
-        noneShader = Shader.Find("SMO/Complete/Base");
-        greyscaleShader = Shader.Find("SMO/Complete/Greyscale");
-        sepiaShader = Shader.Find("SMO/Complete/Sepia");
-        gaussianShader = Shader.Find("SMO/Complete/GaussianBlurMultipass");
-        edgeBlurShader = Shader.Find("SMO/Complete/EdgeBlur");
-        silhouetteShader = Shader.Find("SMO/Complete/Silhouette");
-        outlineShader = Shader.Find("SMO/Complete/EdgeDetect");
-        neonShader = Shader.Find("SMO/Complete/Neon");
-        bloomShader = Shader.Find("SMO/Complete/Bloom");
-        crtShader = Shader.Find("SMO/Complete/CRTScreen");
-        nesShader = Shader.Find("SMO/Complete/PixelNES");
-        snesShader = Shader.Find("SMO/Complete/PixelSNES");
-        gbShader = Shader.Find("SMO/Complete/PixelGB");
-        paintingShader = Shader.Find("SMO/Complete/Painting");
+        noneShader = Shader.Find("Snapshot/Base");
+        greyscaleShader = Shader.Find("Snapshot/Greyscale");
+        sepiaShader = Shader.Find("Snapshot/Sepia");
+        gaussianShader = Shader.Find("Snapshot/GaussianBlur");
+        edgeBlurShader = Shader.Find("Snapshot/EdgeBlur");
+        silhouetteShader = Shader.Find("Snapshot/Silhouette");
+        outlineShader = Shader.Find("Snapshot/EdgeDetect");
+        neonShader = Shader.Find("Snapshot/Neon");
+        bloomShader = Shader.Find("Snapshot/Bloom");
+        crtShader = Shader.Find("Snapshot/CRTScreen");
+        nesShader = Shader.Find("Snapshot/PixelNES");
+        snesShader = Shader.Find("Snapshot/PixelSNES");
+        gbShader = Shader.Find("Snapshot/PixelGB");
+        paintingShader = Shader.Find("Snapshot/Painting");
 
         // Create all filters.
         filters.Add(new BaseFilter("None", Color.white, noneShader));

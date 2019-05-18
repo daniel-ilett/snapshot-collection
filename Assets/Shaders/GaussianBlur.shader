@@ -1,9 +1,8 @@
 ﻿/*	This shader implements a two-pass Gaussian blur, similar to the two-pass
 	box blur. An extra _Spread property is added to control the strength of the
-	Gaussian blur. Apart from this, the general structure of the blur is the
-	same as BoxBlurMultipass.shader.
+	Gaussian blur.
 */
-Shader "Snapshot/GaussianBlurMultipass"
+Shader "Snapshot/GaussianBlur"
 {
     Properties
     {
