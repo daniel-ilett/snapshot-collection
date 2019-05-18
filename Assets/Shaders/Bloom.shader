@@ -4,7 +4,7 @@
 	The blurring steps are provided with UsePass, with single-pass and
 	multi-pass Gaussian blur variants.
 */
-Shader "SMO/Complete/Bloom"
+Shader "Snapshot/Bloom"
 {
 	/*	The Properties section must include anything required by UsePass passes,
 		hence the inclusion of _KernelSize and _Spread.

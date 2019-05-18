@@ -1,7 +1,7 @@
 ﻿/*	This shader samples _MainTex and returns the colour immediately. As an image
 	effect, this shader does nothing; it is a skeleton to build effects on.
 */
-Shader "SMO/Complete/Base"
+Shader "Snapshot/Base"
 {
     Properties
     {
