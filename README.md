@@ -1,6 +1,6 @@
 # Snapshot Shader Collection
 
-![Snapshot Banner](banner.png)
+![Snapshot Banner](AssetStore/SnapshotGithub.png)
 
 ## Overview
 This repository contains a Unity project forked from https://github.com/daniel-ilett/smo-shaders, a tutorial series about image effect shaders. This repository contains the basis for a Unity Asset Store package based on those filters.
