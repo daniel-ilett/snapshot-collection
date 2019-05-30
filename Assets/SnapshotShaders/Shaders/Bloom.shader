@@ -1,8 +1,8 @@
 ﻿/*	This shader combines the result of a blurring operation that acts only on 
-	the brightest pixels of the image, the unblurred version of the image.
+	the brightest pixels of the image, with the unblurred version of the image.
 
-	The blurring steps are provided with UsePass, with single-pass and
-	multi-pass Gaussian blur variants.
+	The blurring steps are provided with UsePass, using a multi-pass Gaussian 
+	blur as a basis.
 */
 Shader "Snapshot/Bloom"
 {
