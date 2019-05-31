@@ -31,13 +31,13 @@ Additionally, more scripts related to the test scene are included:
 - `Hover.cs`.
 
 ### Assets
-This project only uses the Unity Standard Assets on top of content created specifically for this series.
+This project is self-contained - it only uses content created specifically for this series.
 
 ## Software
-The project was created using Unity 2019.2.0a9, but it should be possible to upgrade or downgrade to other versions of Unity.
+The project was created using Unity 2019.1.3f1, but it should be possible to upgrade or downgrade to other versions of Unity.
 
 ## Authors
-This package was written by [Daniel Ilett](https://github.com/daniel-ilett).
+This package was written by [Daniel Ilett](https://danielilett.com/).
 
 Thanks for using my assets in your projects.
 
